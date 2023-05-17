@@ -28,7 +28,7 @@ const CakeForm = ({listOfCakes, setListOfCakes}) => {
         const isCakeAlreadyAdded = updatedcakes.some(
         (cake) => cake.cakeName === newCake.cakeName
       );
-    // if case exists then let the user know it does exist
+    // if cake name exists then let the user know it does exist
       if (isCakeAlreadyAdded) {
         setMessage("Cake already exists on the list.");
       } 
